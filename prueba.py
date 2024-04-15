@@ -1,3 +1,4 @@
+!pip install requirements
 import streamlit as st
 from PIL import Image
 
@@ -19,7 +20,6 @@ def load_model():
    modelo.load_state_dict(dict)
    modelo.eval()
    return modelo
-
 model = load_model()
 
 # Función para predecir la imagen
